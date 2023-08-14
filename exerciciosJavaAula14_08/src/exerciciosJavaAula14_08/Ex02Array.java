@@ -21,5 +21,14 @@ public class Ex02Array {
 		clientes.add(c2);
 		
 		JOptionPane.showMessageDialog(null, clientes.get(0).getNome());
+		
+		if(clientes.get(0).getSalario() > clientes.get(1).getSalario()){
+			
+			JOptionPane.showMessageDialog(null, clientes.get(0).getNome() + " possui o maior salário");
+		}else if(clientes.get(1).getSalario() > clientes.get(0).getSalario()) {
+			JOptionPane.showMessageDialog(null, clientes.get(1).getNome() + " possui o maior salário");
+		}else {
+			JOptionPane.showMessageDialog(null,"Os salarios são iguais");
+		}
 	}
 }
